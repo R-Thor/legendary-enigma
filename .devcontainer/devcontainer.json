@@ -1,0 +1,6 @@
+{
+  "name": "Java Dev (Podman)",
+  "build": {
+    "dockerfile": "Podmanfile.dev"
+  }
+}

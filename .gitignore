@@ -1,0 +1,49 @@
+# --- Build Output ---
+build/
+bin/
+out/
+.gradle/
+.gradle-home/
+
+# --- Dependency Management ---
+# We ignore the wrapper jar if you're installing Gradle via Docker directly, 
+# but usually, it's safe to keep the wrapper properties.
+gradle-app.setting
+!gradle-wrapper.jar
+
+# --- IDE Specifics ---
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# --- OS / Environment ---
+.DS_Store
+Thumbs.db
+.env
+.env.local
+
+# --- Docker / Container Specific ---
+# If you generate logs or dumps inside the container
+*.log
+.attach_pid*
+
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
